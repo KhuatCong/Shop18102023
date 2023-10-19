@@ -100,4 +100,53 @@ header {
 .header-pc .search-header button {
   background-color: #f18833;
   color: #fff;
+}
+
+.menu-mobile {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-wrap: nowrap;
+  z-index: 99;
+}
+.menu-mobile .logo {
+  position: relative;
+  text-align: center;
+  padding: 20px 10px;
+}
+.menu-mobile .logo .closeNav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.menu-mobile .logo img {
+  height: 50px;
+}
+.menu-mobile .menu {
+  padding: 20px 0;
+}
+.menu-mobile .menu li {
+  border-bottom: 1px solid #ec3323;
+}
+.menu-mobile .menu li a {
+  color: #ec3323;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  padding: 10px 20px;
+}
+
+.overlay {
+  position: fixed;
+  width: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  transition: all 0.4s;
 }/*# sourceMappingURL=main.css.map */

@@ -75,14 +75,14 @@
         </div>
     </header>
 
-    <div class="menu-mobile">
+    <div class="menu-mobile" id="menu-mobile">
         <div class="logo">
             <a href="index.html">
                 <img src="assets/image/logo/logo-footer.png" alt="">
             </a>
-            <span>
+            <div onclick="closeNav()" class="closeNav">
                 <i class="fa-solid fa-xmark fa-2xl"></i>
-            </span>
+            </div>
         </div>
         <div class="menu">
             <ul class="ul-reset">
@@ -95,10 +95,15 @@
         </div>
     </div>
 
+    <div class="overlay" id="overlay">
+        
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
