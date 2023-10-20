@@ -3,6 +3,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: rgba(252, 231, 231, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .header-pc .top-header {
@@ -16,6 +17,9 @@ header {
 }
 .header-pc .top-header .logo-header img {
   height: 30px;
+}
+.header-pc .top-header .bar-mobile i {
+  cursor: pointer;
 }
 .header-pc .top-header .menu-header .ul-reset {
   display: flex;
@@ -104,7 +108,7 @@ header {
 
 .menu-mobile {
   background-color: #fff;
-  width: 100%;
+  width: 0;
   height: 100vh;
   position: fixed;
   left: 0;
@@ -112,6 +116,11 @@ header {
   transition: 0.5s;
   text-wrap: nowrap;
   z-index: 99;
+}
+@media screen and (min-width: 993px) {
+  .menu-mobile {
+    display: none;
+  }
 }
 .menu-mobile .logo {
   position: relative;
@@ -123,21 +132,52 @@ header {
   top: 10px;
   right: 10px;
 }
-.menu-mobile .logo img {
-  height: 50px;
+.menu-mobile .logo .closeNav {
+  cursor: pointer;
 }
 .menu-mobile .menu {
   padding: 20px 0;
 }
-.menu-mobile .menu li {
+.menu-mobile .menu .cha .item-cha {
   border-bottom: 1px solid #ec3323;
 }
-.menu-mobile .menu li a {
+.menu-mobile .menu .cha .item-cha a {
   color: #ec3323;
   text-transform: uppercase;
   font-weight: 500;
   display: block;
   padding: 10px 20px;
+  position: relative;
+}
+.menu-mobile .menu .cha .item-cha a:hover {
+  background-color: #f18933;
+  color: #fff;
+}
+.menu-mobile .menu .cha .item-cha a span {
+  position: absolute;
+  right: 10px;
+}
+.menu-mobile .menu .cha .item-cha .con .item-con {
+  border-top: 1px solid #fff;
+}
+.menu-mobile .menu .cha .item-cha .con .item-con a {
+  padding: 10px 45px;
+  text-transform: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.menu-mobile .menu .cha .item-cha .con .item-con a:hover {
+  background-color: #f18933;
+  color: #fff;
+}
+
+.banner-content {
+  position: relative;
+}
+.banner-content .content-slide-home .item-banner img {
+  width: 100%;
+  aspect-ratio: 2.5;
+  object-fit: cover;
 }
 
 .overlay {
@@ -149,4 +189,25 @@ header {
   background: rgba(0, 0, 0, 0.5);
   z-index: 99;
   transition: all 0.4s;
+}
+@media screen and (min-width: 993px) {
+  .overlay {
+    display: none;
+  }
+}
+
+.btn-wrap span {
+  position: absolute;
+  background-color: rgba(241, 137, 51, 0.6078431373);
+  border-radius: 50%;
+  padding: 12px 16px;
+  color: #fff;
+  z-index: 5;
+  top: 45%;
+}
+.btn-wrap span:first-child {
+  left: 0;
+}
+.btn-wrap span:last-child {
+  right: 0;
 }/*# sourceMappingURL=main.css.map */
